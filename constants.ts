@@ -1,5 +1,5 @@
 
-import type { NavLink, PricingPackage } from './types';
+import type { NavLink, PricingPackage, Testimonial, PortfolioItem, PortfolioCategory } from './types';
 
 export const WHATSAPP_BASE_URL = "https://wa.me/6281244286970";
 
@@ -7,6 +7,7 @@ export const NAV_LINKS: NavLink[] = [
   { name: 'Home', href: '#home' },
   { name: 'Paket Harga', href: '#paket-harga' },
   { name: 'Portofolio', href: '#portofolio' },
+  { name: 'Testimoni', href: '#testimoni' },
   { name: 'Tentang Kami', href: '#tentang-kami' },
   { name: 'Hubungi Kami', href: '#hubungi-kami' },
 ];
@@ -51,13 +52,74 @@ export const PRICING_PACKAGES: PricingPackage[] = [
   },
 ];
 
-export const PORTFOLIO_IMAGES: string[] = [
-  'https://picsum.photos/seed/fashion1/600/800',
-  'https://picsum.photos/seed/fashion2/600/800',
-  'https://picsum.photos/seed/fashion3/600/800',
-  'https://picsum.photos/seed/fashion4/600/800',
-  'https://picsum.photos/seed/fashion5/600/800',
-  'https://picsum.photos/seed/fashion6/600/800',
-  'https://picsum.photos/seed/fashion7/600/800',
-  'https://picsum.photos/seed/fashion8/600/800',
+export const PORTFOLIO_CATEGORIES: ['Semua', ...PortfolioCategory[]] = ['Semua', 'Desain Kaos', 'Kampanye Iklan', 'Mockup Produk'];
+
+export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  {
+    src: 'https://picsum.photos/seed/fashion1/600/800',
+    title: 'Monochrome Bold',
+    description: 'Desain kaos minimalis untuk brand streetwear.',
+    category: 'Desain Kaos',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion2/600/800',
+    title: 'Urban Explorer Campaign',
+    description: 'Kampanye Meta Ads yang menargetkan audiens perkotaan.',
+    category: 'Kampanye Iklan',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion3/600/800',
+    title: 'KALAWEAR Hoodie Mockup',
+    description: 'Mockup realistis untuk katalog produk musim hujan.',
+    category: 'Mockup Produk',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion4/600/800',
+    title: 'Tropical Vibes',
+    description: 'Desain grafis cerah untuk koleksi musim panas.',
+    category: 'Desain Kaos',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion5/600/800',
+    title: 'Benang Merah Totebag',
+    description: 'Visualisasi produk totebag dengan berbagai varian warna.',
+    category: 'Mockup Produk',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion6/600/800',
+    title: 'Sustainable Threads',
+    description: 'Kampanye influencer untuk mempromosikan fashion berkelanjutan.',
+    category: 'Kampanye Iklan',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion7/600/800',
+    title: 'Heritage Series',
+    description: 'Desain yang terinspirasi dari motif batik kontemporer.',
+    category: 'Desain Kaos',
+  },
+  {
+    src: 'https://picsum.photos/seed/fashion8/600/800',
+    title: 'Ruang Ganti Lookbook',
+    description: 'Layout mockup untuk lookbook digital.',
+    category: 'Mockup Produk',
+  },
+];
+
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    quote: "Kerja sama dengan SIMULASI GAYA benar-benar mengubah cara kami memandang marketing. Desain kaos mereka fresh dan sangat laku di pasaran!",
+    name: "Andi Wijaya",
+    brand: "Founder, KALAWEAR"
+  },
+  {
+    quote: "Dari konsep hingga eksekusi, timnya profesional dan suportif. Kampanye iklan yang mereka jalankan berhasil meningkatkan penjualan kami 200% dalam sebulan.",
+    name: "Citra Lestari",
+    brand: "Marketing Director, BENANG MERAH"
+  },
+  {
+    quote: "Mockup produk yang dihasilkan sangat realistis dan membantu kami dalam presentasi ke investor. Pelayanan cepat dan hasilnya melebihi ekspektasi.",
+    name: "Budi Santoso",
+    brand: "CEO, RUANG GANTI"
+  }
 ];

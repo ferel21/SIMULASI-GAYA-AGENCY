@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Pricing from './components/Pricing';
 import Portfolio from './components/Portfolio';
+import Testimonials from './components/Testimonials';
 import About from './components/About';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Hero />
         <Pricing />
         <Portfolio />
+        <Testimonials />
         <About />
         <CTA />
       </main>
