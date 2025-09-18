@@ -29,15 +29,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center p-4 transition-opacity duration-300"
+      className="fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center p-4 animate-fade-in"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="bg-white rounded-lg shadow-2xl w-full max-w-lg mx-auto overflow-hidden relative transform transition-all duration-300 scale-95 opacity-0 animate-fade-in-scale"
+        className="bg-white rounded-lg shadow-2xl w-full max-w-lg mx-auto overflow-hidden relative animate-fade-in-scale"
         onClick={(e) => e.stopPropagation()}
-        style={{ animation: 'fade-in-scale 0.3s forwards' }}
       >
         <button
           onClick={onClose}
@@ -48,18 +47,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
         </button>
         <div>{children}</div>
       </div>
-      <style>{`
-        @keyframes fade-in-scale {
-          from {
-            transform: scale(0.95);
-            opacity: 0;
-          }
-          to {
-            transform: scale(1);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </div>
   );
 };

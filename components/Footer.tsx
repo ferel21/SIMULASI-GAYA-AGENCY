@@ -4,13 +4,13 @@ import InstagramIcon from './icons/InstagramIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
 import BehanceIcon from './icons/BehanceIcon';
 
-const Footer: React.FC = () => {
-  const socialLinks = [
-    { name: 'Instagram', icon: InstagramIcon, href: '#' },
-    { name: 'LinkedIn', icon: LinkedInIcon, href: '#' },
-    { name: 'Behance', icon: BehanceIcon, href: '#' },
-  ];
+const socialLinks = [
+  { name: 'Instagram', icon: InstagramIcon, href: '#' },
+  { name: 'LinkedIn', icon: LinkedInIcon, href: '#' },
+  { name: 'Behance', icon: BehanceIcon, href: '#' },
+];
 
+const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-dark text-brand-offwhite py-8">
       <div className="container mx-auto px-6 text-center">
