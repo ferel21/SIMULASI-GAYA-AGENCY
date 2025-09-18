@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { WHATSAPP_BASE_URL } from '../constants';
+import { WHATSAPP_BASE_URL, HERO_IMAGE_BASE64 } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -24,7 +23,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
           <div className="w-80 h-96 md:w-96 md:h-[480px] bg-white rounded-xl shadow-2xl overflow-hidden transform lg:rotate-3">
-             <img src="https://picsum.photos/seed/hero-model/600/800" alt="Mockup Kaos Modern" className="w-full h-full object-cover" />
+             <img src={HERO_IMAGE_BASE64} alt="Abstract fashion concept" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
